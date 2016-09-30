@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Safari, you're the worst -->
+    <meta name='format-detection' content='telephone=no'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_head.html") %>
+  </head>
+  <body>
+
+    <responsive-child>
+      <main class="interactive">
+        <ul class="timeline">
+          <% json.timeline.forEach(function(row) { %>
+          <li>
+            <span class="date">
+              <%= row.date %>
+              <% if (row.time) { %>
+              - <%= row.time %>
+              <% } %>
+            </span>
+            <h2><%= row.event %></h2>
+            <div class="description">
+              <% if (row.photo) { %>
+              <img src="./assets/<%= row.photo %>" class="photo-embed">
+              <% } %>
+              <% if (row.video) { %>
+              <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/<%= row.video %>" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <% } %>
+              <%= row.description %>
+            </div>
+            <% if (row.link) { %>
+            <a href="<%= row.link %>">Read more &raquo;</a>
+            <% } %>
+          </li>
+          <% }) %>
+        </ul>
+      </main>
+    </responsive-child>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_foot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>

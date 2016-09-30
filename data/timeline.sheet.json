@@ -1,0 +1,77 @@
+[
+  {
+    "date": "10/11/2001",
+    "time": "10:40 PM",
+    "event": "Thomas Wales shot and killed",
+    "description": "Seattle federal prosecutor Thomas Wales is fatally shot while sitting at his computer in the basement of his Queen Anne house by a gunman firing through a window from the backyard. ",
+    "link": "http://community.seattletimes.nwsource.com/archive/?date=20011012&slug=shooting12m"
+  },
+  {
+    "date": "12/1/2001",
+    "event": "Search  of Bellevue-area house",
+    "description": "FBI agents search the Bellevue-area home of an airline pilot Wales had prosecuted in a bitterly fought fraud case."
+  },
+  {
+    "date": "10/6/2002",
+    "event": "FBI zeroes in on a suspect",
+    "description": "Days before the first anniversary of the killing, a Seattle Times story reveals that after early problems in the investigation, the FBI is zeroing in on a single suspect: the commercial airline pilot who had been prosecuted by Wales in the fraud case.",
+    "link": "http://community.seattletimes.nwsource.com/archive/?date=20021006&slug=wales060"
+  },
+  {
+    "date": "7/17/2003",
+    "event": "Gun used in shooting identified",
+    "description": "Seattle Times story describes the FBI's unusually sweeping search for a customized gun used in the killing of Thomas Wales.",
+    "photo": "makarov.jpg",
+    "link": "http://community.seattletimes.nwsource.com/archive/?date=20030717&slug=wales17"
+  },
+  {
+    "date": "4/25/2004",
+    "event": "Second search of pilot's Bellevue-area house",
+    "description": "FBI agents remove 27 boxes from the house of the Bellevue-area pilot under investigation in the Wales' slaying",
+    "link": "http://community.seattletimes.nwsource.com/archive/?date=20040426&slug=wales26m"
+  },
+  {
+    "date": "1/23/2006",
+    "event": "\"Gidget\" Letter sent to FBI",
+    "description": "\"OK, so I was broke and between jobs I got an anonymous call offering [the amount was redacted by the F.B.I.] to shoot the guy, so I drove to Seattle to do the job. I did not even know his name. Just got laid off from a job. Nice talking lady, I didn’t know her name, she called me, talked to me by name, and asked if I needed some money. I agreed to pursue the matter, hell, I was going bankrupt. . . .\r\n\r\nI drove to the address, and then parked some distance away, north of downtown. I kind of camped out in the backyard of this house, and waited for the guy to settle in at his computer. Once he was there, I took careful aim. I shot two or possibly more times, and watched him collapse. I absurdly waited a few minutes and then left. I was sure he was dead.\r\n\r\nRetracing my steps, I dropped off the gun, found my money, and returned to Vegas. I feel bad about it, but I needed the money, and there were no witnesses.\"",
+    "photo": "envelope.jpg"
+  },
+  {
+    "date": "5/2/2006",
+    "event": "Las Vegas letter linked to pilot",
+    "description": "Seattle Times story discloses that Bellevue airline pilot under investigation in the fatal shooting Wales was in Las Vegas around the time an anonymous letter was mailed from there claiming responsibility for the killing, according to sources familiar with the investigation.",
+    "link": "http://community.seattletimes.nwsource.com/archive/?date=20060502&slug=wales02m"
+  },
+  {
+    "date": "7/13/2006",
+    "event": "Wales investigation yanked from Seattle FBI office",
+    "description": "In a major rebuke, FBI officials in Washington, D.C., shift the investigation from Seattle to Portland, overruling a decision by the bureau's Seattle office to reduce the number of agents investigating the slaying.",
+    "link": "http://community.seattletimes.nwsource.com/archive/?date=20060614&slug=wales14m"
+  },
+  {
+    "date": "10/11/2006",
+    "event": "Sketch of man released",
+    "description": "On the fifth anniversary of the Wales shooting, the FBI releases a sketch of a man they want to talk to while announcing a new Web site to take tips in the investigation.",
+    "photo": "police-sketch.jpg",
+    "link": "http://www.seattletimes.com/seattle-news/fbi-releases-sketch-in-wales-killing/"
+  },
+  {
+    "date": "12/7/2006",
+    "event": "John McKay fired",
+    "description": "John McKay, the U.S. Attorney for the Western District of Washington, is fired, producing shifting explanations from the Department of Justice, including that McKay had criticized the way superiors were handling the investigation into the Wales slaying.",
+    "link": "http://www.seattletimes.com/seattle-news/mckay-targeted-earlier-than-2006/"
+  },
+  {
+    "date": "9/28/2011",
+    "event": "Eric Holder and Amy and Tom Wales press conference on the 10th anniversary of the shooting.",
+    "description": "U.S. Attorney General Eric Holder and the two grown children of Thomas Wales ask for the public's help Wednesday in solving the decade-old slaying.  ",
+    "video": "_r0TX2gbZio",
+    "link": "http://o.seattletimes.nwsource.com/html/localnews/2016348383_wales29m.html"
+  },
+  {
+    "date": "7/22/2014",
+    "event": "New head of Seattle FBI office describes \"momentum\" in the investigation",
+    "description": "The newly appointed head of the Seattle FBI office says there is “momentum” in the 13-year-old investigation, shortly after the case is returned to Seattle.",
+    "link": "http://www.seattletimes.com/seattle-news/new-seattle-fbi-chief-sees-progress-in-wales-investigation/"
+  }
+]
