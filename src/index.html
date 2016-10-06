@@ -96,6 +96,28 @@ var formatDate = function(d) {
       </div>
     </main>
 
+    <%= t.include("partials/_dontMiss.html", { data: [{
+      link: "http://www.seattletimes.com/seattle-news/crime/15-years-later-the-investigation-into-the-slaying-of-federal-prosecutor-thomas-wales-is-far-from-a-cold-case-fbi-says/",
+      category: "",
+      head: "15 years later, the Thomas Wales investigation is far from a cold case, FBI says",
+      image: "teasers/house.jpg"
+    }, {
+      link: "http://www.seattletimes.com/seattle-news/crime/tracing-gun-barrel-next-hurdle-for-investigators-in-2001-slaying-of-assistant-us-attorney-thomas-wales/",
+      category: "",
+      head: "Tracing gun barrel next hurdle for investigators in 2001 slaying",
+      image: "teasers/gun.jpg"
+    }, {
+      link: "http://www.seattletimes.com/seattle-news/special-reports/my-god-thats-kimberly-online-sleuth-solves-perplexing-mystery-of-identity-thief-lori-ruff/",
+      category: "",
+      head: "'My god, that's Kimberly': Scientist solves perplexing mystery of identity thief Lori Ruff",
+      image: "teasers/ruff.jpg"
+    }, {
+      link: "http://www.seattletimes.com/seattle-news/crime/case-closed-fbi-no-longer-looking-for-db-cooper/",
+      category: "",
+      head: "Case closed: FBI no longer looking for D. B. Cooper",
+      image: "teasers/cooper.jpg"
+    }]}) %>
+
     <%= t.include("partials/_ad.html", { type: "bannerBottom" }) %>
 
     <%= t.include("partials/_navBottom.html") %>
