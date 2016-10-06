@@ -11,17 +11,69 @@ body {
 
 .splash {
   font-family: @df-serif;
+  overflow: hidden;
 
   h1 {
     text-align: center;
     font-size: 48px;
   }
+
+  .brightcove {
+    position: relative;
+    width: 50%;
+    float: right;
+    margin-left: 16px;
+
+    @media @mobile {
+      width: 100%;
+      float: none;
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      padding-bottom: percentage(9 / 16);
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .chatter {
+    font-size: 17px;
+
+    @media @mobile {
+      padding: 0 16px;
+    }
+
+    &.first {
+
+      &::first-letter {
+        float: left;
+        padding-right: 8px;
+        font-size: 300% * @df-line-base;
+        height: 16px * 300 * @df-line-base;
+        line-height: 1;
+        display: block;
+        font-weight: bold;
+      }
+    }
+
+  }
 }
 
 .content {
+  clear: both;
   max-width: 630px;
   font-size: 16px;
-  margin: auto;
+  margin: 16px auto;
 
   @media @mobile {
     padding: 0 16px;

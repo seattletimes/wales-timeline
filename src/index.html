@@ -21,17 +21,29 @@ var formatDate = function(d) {
 
     <%= t.include("partials/_nav.html") %>
 
+
+      <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
+    <header class="splash">
+      <img src="./assets/walesHeader.jpg">
+      <h1>The unsolved slaying of Thomas Wales</h1>
+
+      <div class="container">
+
+        <div class="brightcove">
+          <iframe src="//players.brightcove.net/1509317113/default_default/index.html?videoId=5158664160001" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder=0></iframe>
+        </div>
+
+        <p class="chatter first">
+          He was a father, a federal prosecutor and a vocal gun-control activist. On an October evening 15 years ago, when Wales was alone in his Queen Anne home, a gunman took his life.
+
+        <p class="chatter">
+          Who did it, and why? There’s a suspect with a solid motive for wanting Wales dead – but can investigators uncover the evidence that would be needed to convict him? Answers to those questions continue to elude law enforcement officials in a frustrating search to bring a killer to justice.
+      </div>
+
+    </header>
+
     <div class="container">
-
-      <!-- <%= t.include("partials/_ad.html", { type: "banner" }) %> -->
-
-      <header class="splash">
-        <img src="./assets/front-rip.jpg">
-        <h1>The unsolved slaying of Thomas Wales</h1>
-        <p>
-          As federal officials continue a hunt for answers that has lasted 15 years, a look back at their effort to bring a colleague’s killer to justice
-      </header>
-
 
       <main class="content">
         <div class="timeline">
