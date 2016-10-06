@@ -1,4 +1,12 @@
-<!doctype html>
+<%
+
+var moment = require("moment");
+
+var formatDate = function(d) {
+  return moment(d, "MM/DD/YYYY").format("MMMM D, YYYY")
+}
+
+%><!doctype html>
 <html>
   <head>
     <title><%= json.project.title %></title>
@@ -11,37 +19,75 @@
   </head>
   <body>
 
-    <responsive-child>
-      <main class="interactive">
-        <ul class="timeline">
+    <%= t.include("partials/_nav.html") %>
+
+    <div class="container">
+
+      <!-- <%= t.include("partials/_ad.html", { type: "banner" }) %> -->
+
+      <header class="splash">
+        <img src="./assets/front-rip.jpg">
+        <h1>The unsolved slaying of Thomas Wales</h1>
+        <p>
+          As federal officials continue a hunt for answers that has lasted 15 years, a look back at their effort to bring a colleague’s killer to justice
+      </header>
+
+
+      <main class="content">
+        <div class="timeline">
+          <% var y = null; %>
           <% json.timeline.forEach(function(row) { %>
-          <li>
+          <% var year = row.date.split("/").pop() * 1 %>
+          <% if (year && year != y) { %>
+          <div class="year-label">
+            <label><%= year %></label>
+          </div>
+          <% y = year; %>
+          <% } %>
+          <div class="entry">
+            <% if (row.photo) { %>
+            <div class="photo-embed">
+              <img src="./assets/<%= row.photo %>">
+              <div class="credit"><%= row.credit %></div>
+            </div>
+            <% } %>
+            <h2><%= row.event %></h2>
             <span class="date">
-              <%= row.date %>
+              <%= formatDate(row.date) %>
               <% if (row.time) { %>
               - <%= row.time %>
               <% } %>
             </span>
-            <h2><%= row.event %></h2>
             <div class="description">
-              <% if (row.photo) { %>
-              <img src="./assets/<%= row.photo %>" class="photo-embed">
-              <% } %>
               <% if (row.video) { %>
               <div class="video-embed">
                 <iframe src="https://www.youtube.com/embed/<%= row.video %>" frameborder="0" allowfullscreen></iframe>
               </div>
               <% } %>
-              <%= row.description %>
+              <p><%= row.description.trim().split(/\n+/g).join("<p>") %>
+              <% if (row.quote) { %>
+              <blockquote>
+                <p>
+                <%= row.quote.trim().split(/\n+/g).join("<p>") %>
+              </blockquote>
+              <% } %>
             </div>
             <% if (row.link) { %>
-            <a href="<%= row.link %>">Read more &raquo;</a>
+            <a class="read-more" href="<%= row.link %>" target="_blank">
+              <% if (row.thumbnail) { %>
+              <img src="<%= row.thumbnail %>">
+              <% } else { %>
+              Read more &raquo;
+              <% } %>
+            </a>
             <% } %>
-          </li>
+          </div>
           <% }) %>
-        </ul>
+        </div>
       </main>
-    </responsive-child>
+    </div>
+
+    <%= t.include("partials/_navBottom.html") %>
 
     <script src="app.js" async></script>
     <% if (json.project.production) { %>
