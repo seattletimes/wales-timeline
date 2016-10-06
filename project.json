@@ -6,16 +6,16 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2016/wales-timeline"
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
+  "title": "The unsolved slaying of Thomas Wales",
+  "description": " He was a father, a federal prosecutor and a vocal gun-control activist. On an October evening 15 years ago, when Wales was alone in his Queen Anne home, a gunman took his life. Who did it, and why?",
+  "url": "http://projects.seattletimes.com/2016/wales-timeline/",
   "slug": "",
   "tags": [],
   "image": "assets/social.jpg",
   "sheets": ["1csizeKg3O7-cQ1SN-IMMVVu0kzuo7PXYgD3XX9eP4HI"],
-  "production": false,
-  "embedded": true
+  "production": true,
+  "embedded": false
 }
