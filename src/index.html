@@ -15,14 +15,14 @@ var formatDate = function(d) {
     <!-- Safari, you're the worst -->
     <meta name='format-detection' content='telephone=no'>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_dataLayer.html") %>
     <%= t.include("partials/_head.html") %>
   </head>
   <body>
 
     <%= t.include("partials/_nav.html") %>
 
-
-      <%= t.include("partials/_ad.html", { type: "banner" }) %>
+      <div class="ad"><zeus-ad id='zeus_top' width="100%;"></zeus-ad></div>
 
     <header class="splash">
       <img src="./assets/walesHeader.jpg">
@@ -31,7 +31,16 @@ var formatDate = function(d) {
       <div class="container">
 
         <div class="brightcove">
-          <iframe src="//players.brightcove.net/1509317113/default_default/index.html?videoId=5158664160001" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder=0></iframe>
+          <!-- <iframe src="//players.brightcove.net/1509317113/default_default/index.html?videoId=5158664160001" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder=0></iframe> -->
+        <div itemscope itemtype="https://schema.org/VideoObject">
+          <meta itemprop="uploadDate" content="Thu Oct 06 2016 10:51:49 GMT-0700 (Pacific Daylight Time)"/>
+          <meta itemprop="name" content="&#39;My hope is that somebody with knowledge will still come forward&#39;"/>
+          <meta itemprop="description" content="John McKay, former U.S. Attorney for the Western District of Washington, explains why he believes the murder of Tom Wales was an attack on the justice system and deserves the highest priority for investigation. (Erika Schultz / The Seattle Times)"/>
+          <meta itemprop="duration" content="P0Y0M0DT0H1M29S" />
+          <meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/vV5vvDiq-960.jpg"/>
+          <meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/vV5vvDiq-mlxu3UAc.mp4"/>
+          <script src="https://cdn.jwplayer.com/players/vV5vvDiq-UXknQA8J.js"></script>
+        </div>
         </div>
 
         <p class="chatter first">
@@ -96,10 +105,11 @@ var formatDate = function(d) {
       </div>
 
       <ul class="credit-block">
-        <li class="date"> Originally published: Oct. 7, 2016
-        <li> Reporting: Steve Miletich and Mike Carter
-        <li> Development: Thomas Wilburn
-        <li> Illustration: Frank Mina
+        <li class="date" style="margin-bottom: 0px;"> Updated: Oct. 10, 2021</li>
+        <li class="date"> Originally published: Oct. 7, 2016</li>
+        <li> Reporting: Steve Miletich and Mike Carter</li>
+        <li> Development: Thomas Wilburn</li>
+        <li> Illustration: Frank Mina</li>
       </ul>
     </main>
 
@@ -126,10 +136,11 @@ var formatDate = function(d) {
       image: "teasers/cooper.jpg"
     }]}) %>
 
-    <%= t.include("partials/_ad.html", { type: "bannerBottom" }) %>
+    <div class="ad"><zeus-ad id='zeus_bottom' width="100%;"></zeus-ad></div>
 
     <%= t.include("partials/_navBottom.html") %>
-
+    <script src="https://seattle-times.zeustechnology.com/main.js" async></script>
+    <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
     <script src="app.js" async></script>
     <% if (json.project.production) { %>
     <%= !json.project.embedded ? t.include("partials/_foot.html") : "" %>
