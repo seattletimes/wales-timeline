@@ -2,8 +2,14 @@
 
 var moment = require("moment");
 
+var months = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
+
 var formatDate = function(d) {
-  return moment(d, "MM/DD/YYYY").format("MMMM D, YYYY")
+
+  var m = moment(d, "MM/DD/YYYY").format("M");
+  m = months[m - 1];
+  d = moment(d, "MM/DD/YYYY").format("D, YYYY");
+  return (m + " " + d);
 }
 
 %><!doctype html>
